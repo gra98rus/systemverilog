@@ -89,7 +89,7 @@ syntax match verilogObject     "\<\w\+\ze\(::\|\.\)"
 syntax match verilogComment    "\v\/\/.*$"
 syntax match verilogConstant   "\<[A-Z][A-Z0-9_$]*\>"
 syntax match verilogNumber     "\v(^|([[:space:]|[:punct:]])&[^_])\zs\d+\ze"
-syntax match verilogNumber     "\v\d+\.\d+"
+syntax match verilogNumber     "\v\d+[\.e]\d+"
 syntax match verilogNumber     "\v\d*\'[bhd]\d+"
 
 syntax match verilogPort       "\v.*\zs\.\S*\ze\s*\(.*\)"
